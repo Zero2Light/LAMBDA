@@ -1,0 +1,66 @@
+{
+  "default_scenario": "example_csi",
+  "common": {
+    "output_root": "${SERVER_ROOT}/data_export",
+    "scene_name": "Example",
+    "scenario_name": "Released CSI",
+    "data_weather": "Sunny",
+    "station_name": "BS1",
+    "trajectory_name": "trajectory_000",
+    "carrier_frequency": 60000000000.0,
+    "tx_polarization": "V",
+    "tx_array_shape": [4, 4],
+    "rx_array_shape": [1, 1],
+    "weather": {
+      "kind": "clear",
+      "include_gaseous_absorption": false
+    },
+    "radar": {
+      "bandwidth": 2000000000.0,
+      "sample_rate": 204800000.0,
+      "chirp_duration": 0.00004,
+      "num_chirps": 64,
+      "noise_floor_dbm": -100.0,
+      "array_shape": [4, 4],
+      "spacing_wavelengths": 0.5
+    },
+    "radar_mount": {
+      "yaw": -180.0,
+      "pitch": 40.0,
+      "roll": 0.0
+    },
+    "default_subcarrier_profile": "sub6_30k_1024",
+    "subcarrier_profiles": {
+      "lband_15k_1024": {
+        "name": "lband_15k_1024",
+        "num_subcarriers": 1024,
+        "subcarrier_spacing_hz": 15000.0
+      },
+      "sub6_30k_1024": {
+        "name": "sub6_30k_1024",
+        "num_subcarriers": 1024,
+        "subcarrier_spacing_hz": 30000.0
+      },
+      "sub6_60k_512": {
+        "name": "sub6_60k_512",
+        "num_subcarriers": 512,
+        "subcarrier_spacing_hz": 60000.0
+      },
+      "mmwave_120k_512": {
+        "name": "mmwave_120k_512",
+        "num_subcarriers": 512,
+        "subcarrier_spacing_hz": 120000.0
+      },
+      "mmwave_240k_256": {
+        "name": "mmwave_240k_256",
+        "num_subcarriers": 256,
+        "subcarrier_spacing_hz": 240000.0
+      }
+    }
+  },
+  "scenarios": {
+    "example_csi": {
+      "description": "Example configuration for released CSI and radar utilities."
+    }
+  }
+}

@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lambda-rf"
+version = "0.1.0"
+description = "CSI and radar utility tools for the LAMBDA low-altitude UAV multimodal dataset."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "LAMBDA Dataset Team" },
+]
+keywords = [
+  "uav",
+  "isac",
+  "csi",
+  "radar",
+  "mimo",
+  "ofdm",
+  "wireless",
+  "dataset",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "numpy",
+]
+
+[project.optional-dependencies]
+radar = [
+  "h5py",
+  "matplotlib",
+]
+dev = [
+  "build",
+  "h5py",
+  "matplotlib",
+]
+
+[project.urls]
+Homepage = "https://www.lambda6g.net/"
+Repository = "https://github.com/Zero2Light/LAMBDA"
+Issues = "https://github.com/Zero2Light/LAMBDA/issues"
+
+[project.scripts]
+lambda-rf = "lambda_rf.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lambda_rf*"]

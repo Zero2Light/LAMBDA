@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: "LAMBDA Public Code"
+message: "If you use this code or the LAMBDA dataset in your research, please cite the LAMBDA dataset paper and the public code repository."
+type: software
+authors:
+  - family-names: Zhou
+    given-names: Lin
+  - family-names: Rao
+    given-names: Peichuan
+  - family-names: Zhang
+    given-names: Chenshuo
+  - family-names: Mo
+    given-names: Jianhua
+  - family-names: Tao
+    given-names: Meixia
+  - family-names: Sun
+    given-names: Shu
+  - family-names: Chen
+    given-names: Zhiyong
+repository-code: "https://github.com/Zero2Light/LAMBDA"
+url: "https://www.lambda6g.net/"
+identifiers:
+  - type: doi
+    value: "10.57760/sciencedb.36052"
+    description: "LAMBDA dataset record on Science Data Bank"
+license: Apache-2.0
+version: "0.1.0"
+keywords:
+  - UAV
+  - ISAC
+  - CSI
+  - radar
+  - MIMO
+  - OFDM
+  - dataset utilities
+  - digital twin
+  - wireless
